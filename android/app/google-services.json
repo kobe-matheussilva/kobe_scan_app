@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "936263194220",
+    "project_id": "kobescanapp",
+    "storage_bucket": "kobescanapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936263194220:android:091f98a31140653139aa49",
+        "android_client_info": {
+          "package_name": "com.example.kobe_scan_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2mS8ZQm3Rufzz5v7tCk-OJ1tFahRf_sQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
