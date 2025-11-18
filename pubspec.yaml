@@ -33,22 +33,15 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
-  # Firebase
+  # Firebase - versões estáveis
   firebase_core: ^3.8.0
   firebase_auth: ^5.3.2
   firebase_database: ^11.1.8
 
-  # Scanner Nativo
-  mobile_scanner: ^3.4.1 # Verifique a versão mais recente
+  # Scanner (manteremos comentado por enquanto)
+  # mobile_scanner: ^3.4.1
 
-  # Gerenciamento de Estado
-  provider: ^6.0.5 # Verifique a versão mais recente
-
-  # Injeção de Dependência (Opcional, mas recomendado para Clean Arch)
-  get_it: ^7.6.4 # Verifique a versão mais recente
-
-  # Notificações Locais (Integração Nativa Adicional)
-  flutter_local_notifications: ^16.1.0 # Verifique a versão mais recente
+  provider: ^6.0.5
 
 
 dev_dependencies:
@@ -57,3 +50,15 @@ dev_dependencies:
 
   flutter_lints: ^2.0.0
   # Adicione outras ferramentas de dev se necessário, como build_runner para geradores de código
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/

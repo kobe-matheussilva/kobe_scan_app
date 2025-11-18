@@ -41,38 +41,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'your-web-api-key',
-    appId: 'your-web-app-id',
-    messagingSenderId: 'your-messaging-sender-id',
-    projectId: 'kobescanapp',
-    authDomain: 'kobescanapp.firebaseapp.com',
-    storageBucket: 'kobescanapp.appspot.com',
-    measurementId: 'your-measurement-id',
+    apiKey: 'AIzaSyDemoKeyForWebDevelopmentTesting123456789',
+    appId: '1:123456789:web:abcdef123456789abcdef1',
+    messagingSenderId: '123456789',
+    projectId: 'kobe-scan-demo',
+    authDomain: 'kobe-scan-demo.firebaseapp.com',
+    storageBucket: 'kobe-scan-demo.appspot.com',
+    measurementId: 'G-MEASUREMENT123',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'your-android-api-key',
-    appId: 'your-android-app-id',
-    messagingSenderId: 'your-messaging-sender-id',
-    projectId: 'kobescanapp',
-    storageBucket: 'kobescanapp.appspot.com',
+    apiKey: 'AIzaSyDemoKeyForAndroidDevelopmentTesting123456',
+    appId: '1:123456789:android:abcdef123456789abcdef1',
+    messagingSenderId: '123456789',
+    projectId: 'kobe-scan-demo',
+    storageBucket: 'kobe-scan-demo.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'your-ios-api-key',
-    appId: 'your-ios-app-id',
-    messagingSenderId: 'your-messaging-sender-id',
-    projectId: 'kobescanapp',
-    storageBucket: 'kobescanapp.appspot.com',
+    apiKey: 'AIzaSyDemoKeyForIosDevelopmentTesting123456789',
+    appId: '1:123456789:ios:abcdef123456789abcdef1',
+    messagingSenderId: '123456789',
+    projectId: 'kobe-scan-demo',
+    storageBucket: 'kobe-scan-demo.appspot.com',
     iosBundleId: 'com.example.kobeScanApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'your-macos-api-key',
-    appId: 'your-macos-app-id',
-    messagingSenderId: 'your-messaging-sender-id',
-    projectId: 'kobescanapp',
-    storageBucket: 'kobescanapp.appspot.com',
+    apiKey: 'AIzaSyDemoKeyForMacosDevelopmentTesting123456',
+    appId: '1:123456789:ios:abcdef123456789abcdef2',
+    messagingSenderId: '123456789',
+    projectId: 'kobe-scan-demo',
+    storageBucket: 'kobe-scan-demo.appspot.com',
     iosBundleId: 'com.example.kobeScanApp',
   );
 

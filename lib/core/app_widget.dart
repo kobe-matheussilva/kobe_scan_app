@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kobe_scan_app/core/Theme/app_theme.dart';
-// import 'package:kobe_scan_app/presentation/auth/login_page.dart'; // Ainda não existe, criaremos depois
+import 'package:kobe_scan_app/presentation/auth/login_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -11,7 +11,7 @@ class AppWidget extends StatelessWidget {
       title: 'Kobe Scan',
       debugShowCheckedModeBanner: false, // Remove a faixa de "debug"
       theme: AppTheme.defaultTheme, // Aplica nosso tema personalizado
-      home: const TemporaryHomePage(), // Tela temporária até criarmos o LoginPage
+      home: const LoginPage(), // Tela de login
     );
   }
 }
