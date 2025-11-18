@@ -5,9 +5,16 @@ import 'package:kobe_scan_app/core/app_widget.dart'; // Importa o AppWidget que 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    print('Firebase inicializado com sucesso!');
+  } catch (e) {
+    print('Erro ao inicializar Firebase: $e');
+    // Continua mesmo com erro do Firebase para não travar o app
+  }
 
   // Agora, em vez do placeholder, rodamos o nosso AppWidget
   runApp(const AppWidget());

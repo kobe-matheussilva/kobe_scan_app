@@ -7,6 +7,7 @@ class AppColors {
   static const Color text = Color(0xFFFFFFFF); // Branco (para texto principal)
   static const Color textSecondary = Color(0xFFB0B0B0); // Cinza claro (para texto secundário)
   static const Color cardBackground = Color(0xFF424242); // Cinza médio (para cards, inputs)
+  static const Color error = Color(0xFFE57373); // Vermelho claro (para erros e alertas)
 }
 
 class AppTheme {
