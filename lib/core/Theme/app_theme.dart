@@ -7,8 +7,6 @@ class AppColors {
   static const Color text = Color(0xFFFFFFFF); // Branco (para texto principal)
   static const Color textSecondary = Color(0xFFB0B0B0); // Cinza claro (para texto secundário)
   static const Color cardBackground = Color(0xFF424242); // Cinza médio (para cards, inputs)
-  static const Color success = Color(0xFF4CAF50); // Verde (para indicações de sucesso)
-  static const Color error = Color(0xFFF44336); // Vermelho (para indicações de erro)
 }
 
 class AppTheme {
@@ -70,22 +68,14 @@ class AppTheme {
       ),
     ),
 
-    // Estilo padrão para cards
-    cardTheme: CardThemeData(
-      color: AppColors.cardBackground,
-      elevation: 0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
-      ),
-    ),
-
     // Estilo padrão para a BottomNavigationBar
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: AppColors.cardBackground,
       selectedItemColor: AppColors.primary,
       unselectedItemColor: AppColors.textSecondary,
-      selectedLabelStyle: TextStyle(fontSize: 12),
-      unselectedLabelStyle: TextStyle(fontSize: 12),
+      selectedLabelStyle: TextStyle(fontSize: 12, color: AppColors.primary),
+      unselectedLabelStyle: TextStyle(fontSize: 12, color: AppColors.textSecondary),
+      type: BottomNavigationBarType.fixed, // Garante que todos os ícones apareçam
     ),
   );
 }
