@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kobe_scan_app/presentation/history/history_page.dart';
 import 'package:kobe_scan_app/presentation/home/home_page.dart';
 import 'package:kobe_scan_app/presentation/scanner/scanner_page.dart';
-import 'package:kobe_scan_app/core/theme/app_theme.dart'; // Importa nossas cores
+import 'package:kobe_scan_app/core/theme/app_theme.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -14,7 +14,6 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0; 
 
-  // AGORA TEMOS APENAS 2 TELAS NAS ABAS
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     HistoryPage(),
@@ -26,7 +25,6 @@ class _MainPageState extends State<MainPage> {
     });
   }
 
-  // Função para navegar para a tela do Scanner
   void _navigateToScanner() {
     Navigator.push(
       context,
@@ -40,20 +38,21 @@ class _MainPageState extends State<MainPage> {
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-
+      
       // ---- BOTÃO FLUTUANTE (FAB) ----
       floatingActionButton: FloatingActionButton(
         onPressed: _navigateToScanner,
-        backgroundColor: AppColors.primary, // Nossa cor amarela
+        backgroundColor: AppColors.primary,
+        tooltip: 'Escanear código de barras', // 
         child: const Icon(Icons.qr_code_scanner, color: AppColors.background),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked, // Centraliza o FAB
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 
-      // ---- BARRA DE NAVEGAÇÃO COM 2 ABAS ----
+      // ---- BARRA DE NAVEGAÇÃO ----
       bottomNavigationBar: BottomAppBar(
-        shape: const CircularNotchedRectangle(), // Faz o "corte" para o FAB
+        shape: const CircularNotchedRectangle(),
         notchMargin: 6.0,
-        color: AppColors.cardBackground, // Cor da barra
+        color: AppColors.cardBackground,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
@@ -62,6 +61,7 @@ class _MainPageState extends State<MainPage> {
               icon: Icon(Icons.home, 
                 color: _selectedIndex == 0 ? AppColors.primary : AppColors.textSecondary,
               ),
+              tooltip: 'Início', //
               onPressed: () => _onItemTapped(0),
             ),
             // Aba Histórico
@@ -69,6 +69,7 @@ class _MainPageState extends State<MainPage> {
               icon: Icon(Icons.history, 
                 color: _selectedIndex == 1 ? AppColors.primary : AppColors.textSecondary,
               ),
+              tooltip: 'Histórico', // 
               onPressed: () => _onItemTapped(1),
             ),
           ],

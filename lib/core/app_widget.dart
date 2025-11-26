@@ -12,7 +12,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       title: 'Kobe Scan',
       debugShowCheckedModeBanner: false, // Remove a faixa de "debug"
-      theme: AppTheme.defaultTheme, // Aplica nosso tema personalizado
+      theme: AppTheme.defaultTheme, // Aplica tema personalizado
 
       // Esta será a tela que controla a BottomNavigationBar
       home: const MainPage(), 
